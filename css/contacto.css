@@ -1,0 +1,86 @@
+@import 'style.css';
+.position {
+    margin: auto;
+    width: fit-content;
+}
+
+.cont-form {
+    width: 460px;
+    height: auto;
+    margin: 200px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: var(--backgroundForm);
+    padding-left: 30px;
+}
+
+.style-input {
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--colorNavbar);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.style-textarea {
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--colorNavbar);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+.style-button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: var(--colorNavbar);
+    border-color: var(--colorNavbar);
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+}
+
+.style-button:hover {
+    background-color: var(--colorHover);
+}
+
+.text-button {
+    color: var(--textWhite);
+}
+
+.text-button:active {
+    color: var( --colorTextHover);
+}
+
+span {
+    color: var(--colorNavbar);
+}
+
+h1 {
+    font-size: 39px;
+    padding-bottom: 20px;
+    color: var(--colorNavbar);
+}
+
+.form .style-input:focus {
+    outline: 0;
+    border: 1px solid var(--colorHover);
+}
+
+.form .style-textarea:focus {
+    outline: 0;
+    border: 1px solid var(--colorHover);
+}

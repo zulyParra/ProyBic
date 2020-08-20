@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>Proyecto Día 1</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar"><img src="icono.svg" alt="Logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quienesSomos.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cont-form">
+            <div class="position">
+                <h1>Contáctenos</h1>
+            </div>
+
+            <div class="form">
+
+                <form>
+                    <label>Nombre
+                        <span>*</span>
+                    </label>
+                    <input class="style-input" type="text" name="nombre" id="nombre" required autofocus placeholder="Nombre completo" minlength="6">
+
+                    <label>Email
+                        <span>*</span>
+                    </label>
+                    <input class="style-input" type="email" name="email" id="email" required placeholder="nombre@dominio" pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b">
+
+                    <label>Teléfono
+                    </label>
+                    <input class="style-input" type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$">
+
+                    <label>Asunto
+                        <span>*</span>
+                    </label>
+                    <input class="style-input" type="text" name="asunto" id="assunto" required placeholder="Escribe un asunto" minlength="40">
+
+                    <label>Mensaje
+                        <span>*</span>
+                    </label>
+                    <textarea class="style-textarea" name="mensaje" id="mensaje" required placeholder="Comentario..." maxlength="150"></textarea>
+
+                    <button class="text-button style-button" type="submit" name="enviar" id="enviar">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            Copyrigth @ 2020 - Proyecto Día 1
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+* {
+    --colorNavbar: rgb(66, 135, 214);
+    --colorFooter: rgb(161, 168, 175);
+    --textWhite: rgb(255, 255, 255);
+    --colorHover: rgb(0, 35, 196);
+    --colorTextHover: rgb(255, 92, 244);
+    --backgroundForm: rgb(228, 229, 231);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Inicio Estilos navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--colorNavbar);
+    color: var(--textWhite);
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.navbar img {
+    height: 100px;
+    display: block;
+    padding: 0.2em;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: var(--textWhite);
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: var(--colorHover);
+    color: var( --colorTextHover);
+}
+
+
+/* Fin Estilos navbar */
+
+
+/* Inicio Estilos footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textWhite);
+    width: 100%;
+    height: 100px;
+    background-color: var(--colorFooter);
+}
+
+
+/* Fin Estilos footer */
+
+
+/* Inicio estilos main  con grid*/
+
+.grid-layout {
+    display: grid;
+    /* Según la cantidad de <unidades>fr 
+        se genera la misma cantidad de columnas 
+
+        Se recomienda! que la suma de las unidades sea 12fr
+    */
+    grid-template-columns: 9fr 3fr;
+    grid-template-areas: "contenido aside";
+}
+
+.main-content {
+    grid-area: contenido;
+}
+
+.main-aside {
+    grid-area: aside;
+}
+
+
+/*  Inicio estilos main  con grid*/
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    top: 100px;
+}
+
+.big-grid-item {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.box {
+    font-size: 28px;
+    background-color: var(--backgroundForm);
+    color: var(--textWhite);
+    min-height: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
