@@ -130,7 +130,9 @@ body {
     background-color: var(--backgroundForm);
     color: var(--textWhite);
     min-height: 100px;
+    min-width: 100px;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
