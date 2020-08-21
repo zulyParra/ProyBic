@@ -57,6 +57,17 @@ body {
 /* Fin Estilos navbar */
 
 
+/* Estilos aside */
+
+.z-img {
+    width: 250px;
+    height: 150px;
+}
+
+
+/* Fin estilos aside */
+
+
 /* Inicio Estilos footer */
 
 .footer {
@@ -92,6 +103,10 @@ body {
 
 .main-aside {
     grid-area: aside;
+}
+
+.z-top {
+    margin-top: 112px;
 }
 
 
