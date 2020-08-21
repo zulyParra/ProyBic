@@ -1,5 +1,3 @@
-@import 'footer.css';
-@import 'header.css';
 * {
     --colorNavbar: rgb(66, 135, 214);
     --colorFooter: rgb(161, 168, 175);
@@ -15,11 +13,69 @@ body {
 }
 
 
+/* Inicio Estilos navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--colorNavbar);
+    color: var(--textWhite);
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.navbar img {
+    height: 100px;
+    display: block;
+    padding: 0.2em;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: var(--textWhite);
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: var(--colorHover);
+    color: var( --colorTextHover);
+}
+
+
+/* Fin Estilos navbar */
+
+
+/* Inicio Estilos footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textWhite);
+    width: 100%;
+    height: 100px;
+    background-color: var(--colorFooter);
+}
+
+
+/* Fin Estilos footer */
+
+
 /* Inicio estilos main  con grid*/
 
-.layout {
-    position: absolute;
-    top: 118px;
+.grid-layout {
     display: grid;
     /* Según la cantidad de <unidades>fr 
         se genera la misma cantidad de columnas 
